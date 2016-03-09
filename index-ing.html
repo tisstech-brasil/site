@@ -1,0 +1,1172 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+<link rel="shortcut icon" href="images/icone.ico" >
+<title>TISSTECH</title>
+<meta name="google-translate-customization" content="279bf076de7d07a2-50cbb3d64d4291fa-g25f6a0ea79fe8f32-e"></meta>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Amaranth_400.font.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/atooltip.jquery.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.js" ></script>
+
+<link href="js/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="js/facebox/facebox.js" type="text/javascript"></script>
+
+<style type="text/css">
+.my-groovy-style-olho-vivo {
+	color: #000;
+	background-image:url(images/olhovivo_marca.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important; 
+    background-color: #C7DDF4 !important;
+	
+}
+.my-groovy-style-energi {
+	color: #000;
+	background-image:url(images/enegi_marca.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important; 
+    background-color: #F8E6BB !important;
+	
+}
+
+.my-groovy-style-wkt {
+	color: #000;
+	background-image:url(images/wkt_marca.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important; 
+    background-color: #F7CCCC !important;
+	
+}
+
+.my-groovy-style-patrimonio {
+	color: #000;
+	background-image:url(images/patrimonio_marca.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important; 
+    background-color: #C7DDF4 !important;
+}
+
+.my-groovy-style-taxplan {
+	color: #000;
+	background-image:url(images/taxplan_marca.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important; 
+    background-color: #EFEFC1 !important;
+	
+}
+
+
+.my-groovy-style-alexandria {
+	color: #000;
+	background-image:url(images/alexandria_marca.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important; 
+    background-color: #FAF5DB !important;
+}
+
+
+.my-groovy-style-obra {
+	color: #000;
+	background-image:url(images/obras_marca.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important; 
+    background-color: #F7CEA3 !important;
+	
+}
+
+
+
+.my-groovy-style-patrimonio img {
+	width: 100px;
+	height: 100px;
+}
+
+.my-groovy-style-taxplan img {
+	width: 100px;
+	height: 100px;
+}
+
+
+
+
+
+.my-groovy-style img {
+	width: 100px;
+	height: 100px;
+}
+
+.listaul li {
+	margin:0px 0px 10px 0px !important;	
+	list-style:disc !important;
+}
+
+
+
+.patrimonio li {
+	margin:0px 0px 10px 0px !important;	
+	list-style:disc !important;
+}
+
+
+.otibus {
+	background-image:url(images/otibus_marca.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important; 
+    background-color: #E5EAEE !important;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	$("#fone").mask("(99) 9999-9999");
+
+	$('a[rel*=facebox]').facebox({
+		loading_image : 'js/facebox/loading.gif',
+		//close_image   : 'js/facebox/closelabel.png'
+	}) 
+
+	
+});
+
+function checa_email(campo_email){
+	var arroba=campo_email.indexOf("@");
+	var ponto=campo_email.lastIndexOf(".");
+	var espaco=campo_email.indexOf(" ");
+	if((arroba !=-1)&&(arroba !=0)&&(ponto !=-1)&&(ponto > arroba+1)&&(arroba < campo_email.length-1)&&(espaco==-1)){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+
+function enviardados(){
+	if(document.form.nome.value=="" ){
+		alert( "Preencha Seu Nome!" );
+		document.form.nome.focus();
+		return false;
+	}
+	
+	if(document.form.email.value=="" ){
+		alert( "Preencha Seu E-mail!" );
+		document.form.email.focus();
+		return false;
+	}
+	
+	if(checa_email(document.form.email.value) == false){
+		alert( "Preencha Um E-mail Válido!" );
+		document.form.email.focus();
+		return false;
+	}
+	
+	if(document.form.fone.value=="" ){
+		alert( "Preencha Seu Telefone!" );
+		document.form.fone.focus();
+		return false;
+	}
+	if(document.form.msg.value=="" ){
+		alert( "Preencha Sua Menssagem!" );
+		document.form.msg.focus();
+		return false;
+	}
+	
+}
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<style type="text/css">
+	.button1, #ContactForm a {behavior:url(js/PIE.htc)}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<div style=' clear:both;text-align:center;position:relative'>
+	<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" alt="" /></a>
+</div>
+<![endif]-->
+<style type="text/css">
+
+ul.disc {
+
+list-style-type: disc;
+margin-left: 10px;
+margin-top:25px;
+
+}
+
+ul.circle {
+
+list-style-type: circle;
+margin: 20px;
+margin-top:4px;
+margin-bottom:2px;
+
+}
+
+ul.numeric {
+
+list-style-type: square;
+margin: 20px;
+margin-top:4px;
+margin-bottom:2px;
+
+}
+
+</style>
+
+
+</head>
+<body class="body">
+<div class="body1">
+	<img src="images/topo_olhovivo2.jpg" style="position:absolute;z-index:-999;" width="100%" height="199px">
+	<div class="body2">
+		<div class="main">
+<!-- header -->
+			<header>
+				<div class="wrapper">
+					<nav>
+						<ul id="top_nav">
+							<li class="bg_none"><a href="#page_Home" class="icon1"></a></li>
+							<li><a href="#page_Contacts" class="icon2"></a></li>
+   							<li><a href="index.html" class="" ><img src="images/b-brasil.png" style="height:17px;" ></a></li>
+   							<li><a href="index-ing.html" class=""><img src="images/b-usa.png" style="height:17px;" ></a></li>
+   							<!--<li><a href="index-ing.html" class="b-usa.pgn"></a></li>-->
+						</ul>
+					</nav>
+				</div>
+                
+				<div class="wrapper">
+					<h1><a href="index.html" id="logo">Biz Time Business Company</a></h1>
+					<ul id="icons">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</header>
+<!-- / header -->
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="main">
+		<nav>
+	  <ul id="menu">
+				<li class="menu_active nav1" style="margin-bottom:10px;"><a href="#page_Home">Home</a></li>
+				<li class="nav2" style="margin-bottom:10px;"><a href="#page_News">Partners</a></li>
+				<li class="nav3" style="margin-bottom:10px;"><a href="#page_Services">Services</a></li>
+				<li class="nav4" style="margin-bottom:10px;"><a href="#page_Products">Products</a></li>
+				<li class="nav5" style="margin-bottom:10px;"><a href="#page_FAQ">About Tiss Tech</a></li>
+				<li class="nav6" style="margin-bottom:10px;"><a href="#page_Contacts">Contact</a></li>
+			</ul>
+		</nav>
+<!-- content -->
+		<section id="content">
+		  <div id="page_Home">
+				<div id="slider">					
+					<img src="images/trans1-ing.png" alt="">		
+					<img src="images/2.jpg" alt="">					
+					<img src="images/trans2-ing_new.png" alt="">	
+					<img src="images/1.jpg" alt="">
+					<img src="images/trans3-ing.png" alt="">	
+					<img src="images/img2.png" alt="">							
+				</div>
+				<div id="slider_shadow"></div>
+				<div class="banners">
+				  <div class="col1 pad_left1"></div>
+			</div>
+		  </div>
+			<div id="page_News">
+				<h2>Partners</h2>
+				<div class="box1_bot">
+					<div class="box1_left">
+						<div class="box1_right">
+							<div class="box1">
+								<div class="pad">
+							    <div class="wrapper pad_bot2">
+								  <figure class="left marg_right1">
+						      <p><a href="http://www.soluttions.com.br/" target="_blank"><img src="images/solu.png"ons.jpg" alt="" title="clique aqui!"></a></p>
+</figure>
+								  <p class="pad_bot1 pad_top1"><strong>Soluttions</strong></p>
+										<p>It's an agile and modern company, always searching the best work process to ensure the quality of our products and services and the satisfaction of our clients, generating higher profitability for our shareholders and better results for our business.</p>
+								  </div>
+								  <div class="wrapper">
+									  <figure class="left marg_right1">
+										  <p><a href="http://www.grupoteccenter.com.br/" target="_blank"><img src="images/teccenter.png" alt="" title="clique aqui!"></a></p>
+</figure>
+									<p class="pad_bot1 pad_top1"><strong>Teccenter</strong></p>
+										<p>The Teccenter is a company that develops innovative solutions for our clients based on information technology, acting professionally to ensure the quality and punctuality on delivery of contracted services.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="page_Services">
+				<h2>Services</h2>
+				<div class="box1_bot">
+					<div class="box1_left">
+						<div class="box1_right">
+							<div class="box1">
+								<div class="pad">
+									<p class="pad_bot1"></p>
+										<ul style="list-style-type:circle;margin-left:15px;">
+											<li>Systems Development;</li>
+											<li>Web Sites Development;</li>
+											<li>Technical Assistance;</li>
+											<li>Specialized Consultancy;</li>
+										</ul>
+										<br/>
+										TIS TECHNOLOGY LTDA strives for success in what it does, and seeks to exceed the expectations of its partner regarding the product in question. Clients who hire TIS TECHNOLOGY LTDA do not hire just a software development company, but a partner who will collaborate in many different ways to improve their company's formalized processes, always suggesting improvements and adjustments in order to increase the efficiency and quality of the services, while reducing the costs.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
+					<div class="col2">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+										  <div class="wrapper">
+												<figure class="left marg_right2"><img src="images/olhovivo.png" alt=""></figure>
+											  <h3>&nbsp;</h3>
+												<p>É um inovador sistema web de gestão empresarial, apoiado nos conceitos de Business Inteligence, Workflow, Action Permission, Módulos de processos, e Dashboards.</p>
+										  </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col2 pad_left1">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+											<div class="wrapper">
+												<figure class="left marg_right2"><img src="images/alexan.png" alt=""></figure>
+												<h3>&nbsp;</h3>
+												<p>O Alexandria é um sistema voltado para o controle de documentos com cadastros de contrato, de parcelas e medições, previsões de pagamento, facturações, além de relatórios.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					-->
+				<!--
+				<div class="wrapper marg_top1">
+					<div class="col2">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+											<div class="wrapper">
+											  <figure class="left marg_right2"><img src="images/wkte.png" alt=""></figure>
+											  <h3>&nbsp;</h3>
+												<p>Ferramenta que auxilia atividade de  exportação, e assim consegue prover informações precisas para seus  clientes.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col2 pad_left1">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+											<div class="wrapper">
+												<figure class="left marg_right2"><img src="images/pecobrs.png" alt=""></figure>
+												<h3></h3>
+												<p>Ferramenta que auxilia na segurança no cadastramento  e no acompanhamento das obras.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="wrapper marg_top1">
+					<div class="col2">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+											<div class="wrapper">
+											  <figure class="left marg_right2"><img src="images/taxplan.png" alt=""></figure>
+											  <h3></h3>
+												<p>Com o Sistema de tarifação TaxPlan o usuário poderá realizar planejamentos relacionados à tarifação, facilitando e tornando mais segura a visualização de dados.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col2 pad_left1">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+											<div class="wrapper">
+												<figure class="left marg_right2"><img src="images/patrimonio.png" alt=""></figure>
+												<h3></h3>
+												<p>Ferramenta que auxilia na segurança no cadastramento  e no acompanhamento das obras.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="wrapper marg_top1">
+					<div class="col2">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+											<div class="wrapper">
+											  <figure class="left marg_right2"><img src="images/otibus-logo.png" alt=""></figure>
+											  <h3></h3>
+												<p>Planejamento e manutenção dos quadros de horários;Define Frota Ideal, Quantidade de equipe motorista/cobrador ideal e Custo Operacional das Linhas;Permite Simular Efeitos de Ajustes/Correções da Programação das Linhas e montar a Programação em modo Gráfico;Integração com sistema de bilhetagem fornecendo relatórios e gráficos.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col2 pad_left1">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+											<div class="wrapper">
+												<figure class="left marg_right2"><img src="images/enegi.png" alt=""></figure>
+												<h3></h3>
+												<p>Sistema Energi, foi desenvolvido com a finalidade de gerenciamento dos empreendimentos das obras realizadas do setor elétrico. Através dos cronogramas de empreendimento, os agentes concessionários geram o arquivo XML mensalmente para ANEEL.  </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+			<div id="page_Products">
+				<h2>Products</h2>
+				<div class="wrapper">
+					<div class="col1">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1 alinhar">
+										<div class="pad">
+											<figure class="pad_bot1"><a href="http://www.tisstech.com.br/sistemas/olhovivo/redirecionamento.php" target="_blank"><img src="images/olhovivoOld.png" alt=""></a></figure>
+											<h3><a href="http://www.tisstech.com.br/sistemas/olhovivo/redirecionamento.php" target="_blank">Olho Vivo</a></h3>
+											<p><a title="system information" href="javascript: $.facebox({div:'#olhovivo'}, 'my-groovy-style-olho-vivo');"><img style="vertical-align:middle;width:16px;margin-left:4px;" src="images/info.png" ></a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col1 pad_left1">
+						<div class="box1_bot"><div class="box1_left"><div class="box1_right">
+							<div class="box1 alinhar">
+								<div class="pad">
+									<figure class="pad_bot1"><img src="images/pecobrsOld.png" alt=""></figure>
+									<h3>Obra</h3>
+									<p><a title="system information" href="javascript: $.facebox({div:'#obra'}, 'my-groovy-style-obra');"><img style="vertical-align:middle;width:16px;margin-left:4px;" src="images/info.png" ></a></p>
+								</div>
+							</div>
+						</div></div></div>
+					</div>
+					<div class="col1 pad_left1">
+						<div class="box1_bot"><div class="box1_left"><div class="box1_right">
+							<div class="box1 alinhar">
+								<div class="pad">
+									<figure class="pad_bot1"><a href="http://www.tisstech.com.br/sistemas/wkt/redirecionamento.php" target="_blank"><img src="images/logo_wkt123.PNG" alt="" style="margin-top:20px;"></a></figure>
+								  <h3><a href="http://www.tisstech.com.br/sistemas/wkt/redirecionamento.php"target="_blank">wkt</a></h3>
+									<p><a title="system information" href="javascript: $.facebox({div:'#wkt'}, 'my-groovy-style-wkt');"><img style="vertical-align:middle;width:16px;margin-left:4px;" src="images/info.png" ></a></p>
+								</div>
+							</div>
+						</div></div></div>
+					</div>
+				</div>
+                <div class="wrapper marg_top1">
+					<div class="col1">
+						<div class="box1_bot"><div class="box1_left"><div class="box1_right">
+							<div class="box1 alinhar">
+								<div class="pad">
+									<figure class="pad_bot1"><img src="images/alexanOld.png" alt="" ></figure>
+									<h3 style="line-height:34px">alexandria </h3>
+                                    <p><a title="system information" href="javascript: $.facebox({div:'#alexandria'}, 'my-groovy-style-alexandria');"><img style="vertical-align:middle;width:16px;margin-left:4px;" src="images/info.png"></a></p> 
+								</div>
+							</div>
+						</div></div></div>
+					</div>
+					<div class="col1 pad_left1">
+					  <div class="box1_bot"><div class="box1_left"><div class="box1_right">
+							<div class="box1 alinhar">
+								<div class="pad">
+									<figure class="pad_bot1"><img src="images/patrimonio2.png" alt=""></figure>
+									<h3>Patrimônio</h3>
+									<p><a title="system information" href="javascript: $.facebox({div:'#patrimonio'}, 'my-groovy-style-patrimonio');"><img style="vertical-align:middle;width:16px;margin-left:4px;" src="images/info.png" ></a></p>
+								</div>
+							</div>
+						</div></div></div>
+					</div>
+					<div class="col1 pad_left1">
+						<div class="box1_bot"><div class="box1_left"><div class="box1_right">
+							<div class="box1 alinhar">
+								<div class="pad">
+									<figure class="pad_bot1"><a href="http://www.tisstech.com.br/sistemas/energi/"  target="_blank"/><img src="images/enegiOld.png" alt="" /></a></figure>
+									<h3><a href="http://www.tisstech.com.br/sistemas/energi/"  target="_blank"/>Energi</a></h3>
+									<p><a title="system information" href="javascript: $.facebox({div:'#energi'}, 'my-groovy-style-energi');"><img style="vertical-align:middle;width:16px;margin-left:4px;" src="images/info.png" ></a></p>
+								</div>
+							</div>
+						</div></div></div>
+					</div>
+				</div>
+				     <div class="wrapper marg_top1">
+					<div class="col1">
+						<div class="box1_bot"><div class="box1_left"><div class="box1_right">
+							<div class="box1 alinhar">
+								<div class="pad">
+									<figure class="pad_bot1"><img src="images/taxplan-New.png" alt=""></figure>
+									<h3>TAXPLAN</h3>
+									<p><a title="system information" href="javascript: $.facebox({div:'#taxplan'}, 'my-groovy-style-taxplan');"><img style="vertical-align:middle;width:16px;margin-left:4px;" src="images/info.png" ></a></p>
+								</div>
+							</div>
+						</div></div></div>
+					</div>
+					<div class="col1 pad_left1">
+					  <div class="box1_bot"><div class="box1_left"><div class="box1_right">
+							<div class="box1 alinhar">
+								<div class="pad">
+									<figure class="pad_bot1"><img src="images/otibus-logoNew.png" alt=""></figure>
+									<h3>OTIBUS</h3>
+									<p><a title="system information" href="javascript: $.facebox({div:'#otibus'}, 'my-groovy-style otibus');" title="Clique e saiba mais sobre este produto"><img  style="vertical-align:middle;width:16px;margin-left:4px;" src="images/info.png" align="absmiddle" /></a></p>
+								</div>                              
+							</div>
+						</div>
+                        </div>
+                        </div>
+					</div>
+					<div class="col1 pad_left1">
+						
+					</div>
+				</div>
+			</div>
+			<div id="page_FAQ">
+				<h2>About TISS TECH</h2>
+				<div class="box1_bot">
+					<div class="box1_left">
+						<div class="box1_right">
+							<div class="box1">
+							  <div class="pad">
+                                    <p class="pad_bot1"><strong>Technology, Information, Systems and Services.</strong></p>
+									
+									 <p class="pad_bot1"><strong>1. &nbsp; The Company</strong></p>
+                                    <p>
+                                    
+                                       &nbsp;&nbsp;&nbsp; The TISS was established in 2002 to fulfill the need of the domestic market in the formation of a new management model based on Information Technology. 
+                                        
+                                    </p>
+                                    <p>
+                                    
+                                       &nbsp;&nbsp;&nbsp; This new model should be able to act intensively on the market with the objective of generating fast and lasting changes.
+                                        
+                                    </p>
+                                    <p>
+                                       &nbsp;&nbsp;&nbsp;With a merged composite of engineers, administrators and IT specialists, the team which was formed at TISS began to act jointly in 1995, on specific projects of public urban transportation system in the metropolitan region of Recife - Pernambuco, Alagoas and Rio Grande do Norte.
+                                        
+                                     </p>
+                                    <p>
+                                    
+                                       &nbsp;&nbsp;&nbsp; The increase of demands to the team led to the formation of a company, the TissTech. The involved team used the multidisciplinary expertise to develop a work methodology turned toward the integration of technologies and solutions in order to remedy deficiencies and satisfy needs.
+                                    
+                                    </p>
+									
+									<p class="pad_bot1"><strong>2. &nbsp; Organization</strong></p>
+									
+									<p>
+									
+										 &nbsp;&nbsp;&nbsp;As a modern vision company, we organize our activities in a structure which ensures quality while seeking to avoid spending excesses. Each project, service or product is agglutinated into a business core. This mixed structure between a classic model and a matrix network, ensures great flexibility, agility and functionality in managing our activities with clients and partners.
+									
+									</p>
+									
+									<p class="pad_bot1"><strong>3. &nbsp; In Numbers</strong></p>
+									
+									<p>
+									
+										 &nbsp;&nbsp;&nbsp; The TissTech team and its partners and collaborators operate throughout the national territory and abroad.
+									
+									</p>
+									
+									<p>
+									
+										&nbsp;&nbsp;&nbsp; We can highlight in the developed activities;
+									
+									</p>
+																
+										<ul class="disc">
+											
+											<li>Definition, project, implementation and operation during 10 years of the SABE (Automatic System of Electronic Ticketing) to Recife Metropolitan Region in Pernambuco / Brazil.</li>
+											
+										</ul>
+										
+										<ul class="circle">
+											
+											<li>The SABE system is responsible for all users registrations of the transports in the Recife Metropolitan Region, which comprises 18 municipalities with a total population of over 6,000,000 (six million) inhabitants. It has more than 1,500,000 (one million and five hundred thousand) registered users all with smart cards with credits which can be used in more than 3,000 POS's (three thousand points of sale) embedded in vehicles and at strategic points of Recife Metropolitan Region.</li>
+											
+										</ul>
+										
+										<ul class="circle">
+											
+											<li>SABE has a registration and control central which processes and reviews over 17,000 (seventeen thousand) requests per month, and in the beginning individually registered all users from the project.</li>
+											
+										</ul>
+									
+										<ul class="disc">
+											
+											<li>Definition, project, implementation and operation during 10 years of the SBE (System of Electronic Ticketing) to the city of Maceió in Alagoas / Brazil.</li>
+											
+										</ul>
+										
+										<ul class="circle">
+											
+											<li>The SBE is the system responsible for all users registrations of the transports in the city of Maceió which has a population of over 1,000,000 (one million) inhabitants. It has more than 600,000 (six hundred thousand) registered users all with smart cards with credits which can be used in more than 1,000 POS's (one thousand points of sale) embedded in vehicles and at strategic points of the city.</li>
+											
+										</ul>
+										
+										<ul class="circle">
+											
+											<li>The SBE has a registration and control central which processes and reviews more than 4,000 (four thousand) requests per month, and in the beginning individually registered all users from the project.</li>
+											
+										</ul>
+										
+										<ul class="disc">
+											
+											<li>Definition, project, implementation and operation during 6 years SBE System (System of Electronic Ticketing) to the city of João Pessoa in Paraíba / Brazil.</li>
+											
+										</ul>
+										
+										<ul class="circle">
+											
+											<li>The SBE is the system responsible for all users registrations of the transports in the city of João Pessoa which has a total population of over 1,000,000 (one million) inhabitants. It has more than 500,000 (five hundred thousand) registered users all with smart cards with credits which can be used in more than 1,000 POS's (one thousand points of sale) embedded in vehicles and at strategic points of the city.</li>
+											
+										</ul>
+										
+										<ul class="circle">
+											
+											<li>The SBE has a registration and control central which processes and reviews more than 4,000 (four thousand) requests per month, and in the beginning individually registered all users from the project.</li>
+											
+										</ul>
+										
+										<ul class="disc">
+											
+											<li>Definition, project, implementation and operation during 10 years of the SBE (System of Electronic Ticketing) to the city of Teresina in Piauí / Brazil.</li>
+											
+										</ul>
+										
+										<ul class="circle">
+											
+											<li>The SBE is the system responsible for all users registrations of the transports in the city of Teresina which has a total population of over 1,000,000 (one million) inhabitants. It has more than 450,000 (four hundred and fifty thousand) registered users all with smart cards with credits which can be used in more than 1,000 POS's (one thousand points of sale) embedded in vehicles and at strategic points of the city.</li>
+											
+										</ul>
+										
+										<ul class="circle">
+											
+											<li>The SBE has a registration and control central which processes and reviews more than 4,000 (four thousand) requests per month, and in the beginning individually registered all users from the project.</li>
+											
+										</ul>
+										</br>
+										<p>
+											&nbsp;&nbsp;&nbsp;In a decade TissTech was responsible for the registration and management of over 3,000,000 (three million) users, registering, giving support, administrating the resources and managing the entire financial database and registry, with a network of more than 6,000 POS 's (six thousand points of sale).
+										</p>
+										
+										<ul class="disc">
+											
+											<li>We are the developers and providers of the OTIBUS solution. An intelligent system for planning and monitoring the offer of public transport, optimizing the best offer at the lowest possible cost. This system is responsible for the transportation planning in the state of Pernambuco and in the city of João Pessoa, in addition to being used by several private companies in the sector and also for the planning study of the Angola government. The system is responsible for the planning of a network that serves more than 6,000,000 (six million) users per day.</li>
+											
+										</ul>
+										
+										<ul class="disc">
+											
+											<li>We are the developers and providers of the OLHO VIVO solution. Enterprise Resource Planning (ERP) a light system and completely focused on WEB with a simple and decision oriented characteristic.</li>
+											
+										</ul>
+										
+										<ul class="disc">
+											
+											<li>We are the developers and providers of the TAXPLAN solution. A system for calculate the public tariffs and scenarios simulations based on its history data.</li>
+											
+										</ul>
+										
+										<ul class="disc">
+											
+											<li>We are the developers and providers of the ENERGI solution. A system that verifies the results of energy suppliers companies and forwards to the government controllers, allowing the supervision of the service goals established.</li>
+											
+										</ul>
+										</br>
+										<ul>
+											<li>We can also mention various experiences in different areas:</li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>1.	"SETRANS / PE - Passengers Transports Union of Pernambuco State"
+	    	                                    <p>Service: Technical Advisory in the Operation and Costs of Transportation field.</p>
+    	                                    </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>2.	Urbanization Company of Jaboatão
+	                                            <p>Service: Studies of Transportation and Traffic Engineering for the structuring and Rationalization of the Transportation and Circulation System in the city of Jaboatão, also including the following activities: Studies of Transportation and Traffic using Simulation Models; Studies and Plans of Circulation for the Urban Road System; Research of the Origin / Destination, the embark / disembark and the speed; Assembling the Traffic Networks; Studies of Computerized Planning Models, System Specifications for Traffic Management.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>3.	INFRAERO / ROUTINES
+	                                            </br><p>Service: Technical Services with specialized technical consultancy professinals for the elaboration of the supervision planning of the execution and commissioning of the special works of the airport network INFRAERO, including the elaboration of surveillance routines aiming for the management of the engineering services quality through standardized procedures in various specialties and commissioning procedures of special works.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>4.	Roadways Department of the State of Rio Grande do Norte - DER / RN</br>
+												<p>Service: Administrative and Technical Consulting to Support the Supervision of the Collective Passenger Intercity Road Transportation System of the state of Rio Grande do Norte. Service held for 12 years.</p>
+												<p>Conception, implementation and control of the Provisory Register of Optional Transportation of Medium Size – CPTOMP</p>
+											</li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>5.	TRANSPAL -  Association of Passengers Transportation Company of the State of Alagoas</br>
+												<p>Services: Consultancy for operationalization of the tariff clearinghouse;</p>
+												<p>Conception, development and implementation of the systems authorized by the manager and the supervision of the Collective Passenger Transport System; Conception and development of organizational studies in order to structure the management area of the Transportation System. Implementation of new organizational structures and staff training for the management of the Transport System;</p>
+												<p>Consultancy for the city of Maceió-AL.</p>
+											</li>											
+										</ul>
+										</br>
+									  <ul>
+											
+											<li>6.	Public Services Regulatory Agency of the State of Alagoas - ARSAL</br>
+                                                <p>Service: Technical Engineering Services for the Measurement of the Bus Lines of the Intercity Passenger System of Alagoas.</p>
+                                                <p>Technical Engineering Services regarding the Measurement and Collecting of the Lines of the Intercity Passenger Road Transport System of the State of Alagoas.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											<li>7.	State Agency of Public Services of Mato Grosso do Sul - AGEPAN</br>
+	                                            <p>Services: Specialized Consultancy Services in the area of Intercity Passenger Road Transport for the Execution of the Restructuration Project of the Intercity Passenger Transportation System of the State of Mato Grosso do Sul.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>8.	Urbanization Company of Recife - URB / RECIFE</br>
+	                                            <p>Service: Circulation Master Plan of Recife - PDC / RECIFE, considering its articulation with the main road system of Recife Metropolitan Region.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>9.	Petrolina City Hall</br>
+                                                <p>Service: Circulation Master Plan of Petrolina; </p>
+                                                <p>Studies and Engineering Projects for the Passenger Transportation Public System - STPP in the urban area of the city of Petrolina-PE, aiming for the Operation modernization of the Public Transportation System, through the Implementation of a Light Rail System -VLT, into a segregated central corridor of transportation; rationalization and organization of the operation and Circulation of the Collective Transport System, and the realization of Complementary Studies to improve the traffic flow of the city urban center access.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>10.	FESP / SP</br>
+	                                            <p>Service: Technical services for institutional development project to equip the Subprefectures with support tools for the execution of the pavement management, mount the database for coordination and planning of maintenance and urban cleaning.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>11.	CONDER- Development Company of Salvador Metropolitan Region</br>
+	                                            <p>Service: Charging Policy of the Metropolitan Transportation Bus System in Salvador Metropolitan Region; Implementation and Monitoring Manual of the transportation vouchers in the Metropolitan System per bus in Salvador Metropolitan Region; Creation and implementation of the Metropolitan Transportation Fund.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>12.	CELI Construction</br>
+	                                            <p>Service: Specialized technical consulting services for management support and technical advisory on the implementation of the pipeline system in Congo.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>13.	OLHO D'ÁGUA CENTRAL PLANT</br>
+	                                            <p>Service: Technical engineering services regarding the layout alternatives studies, studies of technical, financial, economic and social feasibility, and the engineering executive project for implementation and paving of the neighboring road Condado-Ferreiros and the connection to the Matari Plant / Olho d'água Plant, including the registration of betterments and socio-economic researches.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>14.	DER-AL</br>
+	                                            <p>Service: Conservation, Maintenance and Restoration programming of the State Paved Network with 1454.98 KM of extension</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>15.	DER-RN</br>
+	                                            <p>Service: Conservation, Maintenance and Restoration programming of the State Paved Network with 2894.62 KM of extension</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>16.	Union of Passenger Transportation Companies of the State of Alagoas - SINTRAN</br>
+	                                            <p>Service: Specialized Technical Services to Support the Management of the Intercity Passenger Transportation System of the State of Alagoas - STIP / AL.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>17.	FETRONOR - Federation of the Northeast Passenger Transport Companies</br>
+	                                            <p>Service: Specialized Technical Services Consultancy and Technical Advisory covering the states of Rio Grande do Norte, Paraíba, Pernambuco and Alagoas.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>18.	Municipal Superintendence of Traffic and Transport - SMTT</br>
+	                                            <p>Service: Technical Services of Engineering Consultancy related to the Research of Transportation Planning, Urban Transportation Master Plan and Advisory Services in Traffic Engineering.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<ul>
+											
+											<li>19.	TACOM Engineering and Projects Ltda.</br>
+	                                            <p>Service: Technical Advisory to the Electronics Turnstile Program of the STPP / Recife.</p>
+                                            </li>											
+										</ul>
+										</br>
+										<p>
+											&nbsp;&nbsp;&nbsp; Consultancy and advisory to several private companies when dealing with solutions to their informational bases, focusing on strengthening the decision-making process, and information management. Notably in the construction of PDTIC - Master Plans of Information Technology and Communication.
+										</p>
+                                    
+                            	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="page_Contacts">
+				<h2>Contact</h2>
+				<div class="wrapper">
+					<div class="col3">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+											<form id="ContactForm" action="form.php" name="form" onSubmit="return enviardados();" method="post"  >
+												<div>
+													<div class="wrapper"><span>Name:</span><input id="nome" name="nome" type="text" class="input" ></div>
+													<div class="wrapper"><span>E-mail:</span><input id="email" name="email" type="text" class="input" ></div>
+													<div class="wrapper"><span>Phone:</span><input id="fone" name="fone" type="text" class="input" ></div>
+											    <div class="textarea_box"><span>Message:</span>
+											      <textarea name="menssagem" id="msg" cols="1" rows="1"></textarea></div>
+												<center><input style="cursor: pointer"  class="wrapper2"  type="submit" name="enviar"  value="Send" /></center>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col1 pad_left1">
+						<div class="box1_bot">
+							<div class="box1_left">
+								<div class="box1_right">
+									<div class="box1">
+										<div class="pad">
+										  <p style="margin-left:-12px;"><span class="right marg_right2">Brazil</span>Country:<br>
+											<span class="right marg_right2">Pernambuco</span>State:<br>
+											<span class="right marg_right2">Recife</span>City:<br>
+                                            <span class="right marg_right2" style="">Phone: +55(81)3228-9247</span><br>
+										  </p>
+										  <p class="pad_bot1" style="margin-left:-12px;"><strong>Information</strong><br/>
+										  Work hours are from Monday to Friday from 08:00 a.m. to 06:00 p.m. (GTM -03:00), leave a message or contact us for more information.
+										  </p>
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- / content -->
+	</div>
+</div>
+<div class="body3">
+	<div class="body4">
+		<div class="main">
+<!-- footer -->
+			<footer>
+				<a href="#page_Home" id="footer_logo">Biz Time</a>
+				<div>© Copyright © 2013 - Tisstech - Rua Dom Manoel da Costa nº200 Torre Zip-Code 50710-380 &nbsp;  Recife - PE - Brazil</div>
+			</footer>
+	  </div></div></div>
+<script type="text/javascript"> Cufon.now(); </script>
+
+<!-- div id="google_translate_element" style="position:absolute; z-index:9999; left:0; top:0;"></div> -->
+
+<!-- ***********************************************************************************************************************************-->
+<div id="olhovivo" style="border: solid; width: 150px; display:none;">
+	<b>OLHO VIVO</b>
+    <p></p>
+	<p>It is an innovative business management web system, in which the organization processes are authorized and controlled through a customizable flow.</p> 
+	<p>With easiness of access from anywhere in the world via Internet, having only a password, and the decisions support tools, the administrator day-to-day routine becomes more peaceful, gaining free time to devote to other activities.</p>
+	<p>The customization brings a unique differential into the market: the system's ability to fully adapt to the needs of the companies.</p>
+	<p>The system is based on the following foundations:</p>
+    <ul class="listaul" id="" style="margin-left:40px !important;">
+	    <li>Customization: The Company does not need to change its way of working, the system adapts to the reality of the company;</li>
+        <li>Workflow: Sequence of steps needed to achieve the automation of business process;</li>
+        <li>Process of collecting, organizing, analyzing, sharing and monitoring information that offer support to the business management;</li>
+        <li>Composed by processes authentication, authorization, and auditing;</li>
+        <li>Dashboard: Illustrated representation of business performance throughout all the organization and enabling approval of processes.</li>
+    </ul>
+    <p>It has the following modules:</p>
+    <ul class="listaul" id="" style="margin-left:40px !important;">
+        <li>Documents;</li>
+        <li>Financial;</li>
+        <li>Human Resources (HR);</li>
+        <li>Processes;</li>
+        <li>Accounting;</li>
+        <li>Patrimony;</li>
+        <li>Stock;</li>
+        <li>Basic Register;</li>
+        <li>Agenda;</li>
+        <li>Business Intelligence.</li>
+    </ul>
+</div>
+<!-- ***********************************************************************************************************************************-->
+
+
+
+
+<div id="patrimonio" style="border: solid; width: 150px; display:none;">
+	<b>PATRIMÔNIO</b>
+    <p></p>
+	<p>Is the system responsible for controlling the assets of the company, stating the location and condition of each asset. Facilitating the management and control of each asset.</p> 
+	<p>Being a web application, it is available through an email address that can be accessed from anywhere in the world that is connected to the Internet, which facilitates access.</p>
+	
+	<p>The PATRIMÔNIO is divided into the following modules:</p>
+    <ul class="patrimonio" id="" style="margin-left:40px !important;">
+        <li>Contract Management;</li>
+        <li>Patrimony Management;</li>
+        <li>Addenda Management;</li>
+        <li>Material Management;</li>
+        <li>Billing Management;</li>
+        <li>Graphics with Comparative Analysis;</li>
+        <li>Reports;</li>
+        <li>Security.</li>
+    </ul>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+<!-- ***********************************************************************************************************************************-->
+
+
+
+<div id="alexandria" style="border: solid; width: 150px; display:none;">
+    <b>ALEXANDRIA</b>
+    <p></p>
+    <p>The Alexandria is a system focused on document control. In it is kept various kinds of information, such as type, classification, category, shelf, data related to patrimony (material, serial number, price, etc.), contract registration, installments and measurements, payment forecasts, billing, and reports. In addition, it has security of access since it is only for registered users with different kinds of profiles in which, depending on the profile, might allow or not the execution of actions.</p>
+    <p>The Alexandria system is web application, meaning that it is available through an email address which can be accessed from anywhere in the world that is connected to the Internet, facilitating access.</p>
+    <p>The Alexandria is divided into the following modules:</p>
+    <ul class="listaul" id="listaul" style="margin-left:40px !important;">
+        <li>Documents Control;</li>
+        <li>Contracts Control;</li>
+        <li>Billing Control;</li>
+        <li>Patrimonial Control;</li>
+        <li>Reports;</li>
+        <li>Security.</li>
+    </ul>
+</div>
+
+<!-- ***********************************************************************************************************************************-->
+
+
+
+
+<div id="obra" style="border: solid; width: 150px; display:none;padding-left:40px">
+<b>OBRAS</b>
+<p></p>
+<p>The system allows control of the works, through planning it is defined the amount and extent of titles and its services.</p>
+<p>The launch of the measurements accomplished into the system generates a comparative between the planned and the accomplished.</p>
+<p>The system uses a web platform facilitating access from anywhere, allowing greater usability.</p>
+<p>The OBRAS system has as main modules:</p>
+    <ul class="listaul" style="margin-left:40px !important;">
+       <li>Work Control:</li>
+           <ul > 
+               <li style="margin-left:40px !important;list-style:circle !important;">Work Planning;</li>
+               <li style="margin-left:40px !important;list-style:circle !important;">Launch Financial Execution;</li>
+               <li style="margin-left:40px !important;list-style:circle !important;">Launch Physics Execution.</li>
+           </ul>
+       <li>General Register;</li>
+       <li>Measurement Evolution Graphics;</li>
+       <li>Reports;</li>
+       <li>Security.</li>
+    </ul>
+</div>
+<!-- ***********************************************************************************************************************************-->
+
+
+<div id="taxplan" style="border: solid; width: 150px; display:none;">
+	<b>TAXPLAN</b>
+    <p></p>
+	<p>With the TAXPLAN fare system the user can make plans related to the fare pricing, making it easier and safer the data visualization.</p> 
+	<p>Saving time, since it is not necessary to redo the basic register or the plans previously accomplished because the system reuses all information provided to it.</p>
+	<p>The system also offers security control, since it can be accessed only by registered users that have profiles which define individually the permissions within the system, ensuring that every user can act only within their competence.</p>
+	<p>The TAXPLAN is divided into the following modules:</p>
+    <ul class="listaul" style="margin-left:40px !important;">
+	    <li style="">Staff Control:</li>
+	    <ul class="">
+	    	<li style="margin-left:40px !important;list-style:circle !important;">Uniforms;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Meals;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Medical Assistance;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Sector;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Profession.</li>
+	    </ul>
+        <li >Miscellaneous Registers:</li>
+         <ul class="">
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Costs;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Enterprise;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Outsourced Service.</li>
+	    </ul>
+        <li>Vehicle Control:</li>
+        <ul class="">
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Vehicles;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Tire;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Licensing Inspection;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Civil Liability Insurance;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Capital Depreciation/Compensation.</li>
+	    </ul>
+        <li>Planning Control;</li>
+        <li>Reports;</li>
+        <ul class="">
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Planning Report;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Vehicle Report;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Tire Report;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Costs Report;</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Occupation Report.</li>
+	    	<li style="margin-left:40px !important;list-style:circle !important;" >Outsourced Services Report.</li>
+	    </ul>
+	    <li>Security.</li>
+    </ul>
+</div>
+<!-- ***********************************************************************************************************************************-->
+
+<div id="otibus" style="border: solid; width: 150px; display:none;">
+    <b>OTIBUS</b>
+    <p></p>
+    <p>OTIBUS The system allows the user to perform the planning and maintenance of timesheets. It sets the optimum fleet, the ideal number of staff driver/collector and identifies the operating cost of the lines.</p>
+    <p>The system simulates the effects of adjustments/corrections of bus lines programming, assembling the programming in Graphic mode.</p>
+    <p>The OTIBUS has integration with the ticketing system providing the following reports and graphs:</p>
+    <ul class="listaul" id="" style="margin-left:40px !important;">
+        <li>Comparatives of "Scheduled x Accomplished";</li>
+        <li>Travel Analysis Report;</li>
+        <li>Report of the Results per Line ;</li>
+        <li>Operational Evaluation Chart;</li>
+        <li>Graph of Timetable per trip.</li>
+    </ul>
+    <p>Main modules:</p>
+    <ul class="listaul" id="" style="margin-left:40px !important;">
+        <li>System;</li>
+        <li>Register;</li>
+        <li>Operations;</li>
+        <li>Reports.</li>
+    </ul>
+</div>
+<!-- ***********************************************************************************************************************************-->
+
+<div id="energi" style="border: solid; width: 150px; display:none;">
+	<b>ENERGI</b> 
+    <p></p>
+    <p>The ENERGI was developed with the purpose of managing endeavors and works in the electricity sector.</p>
+    <p>Through the system the concessionaire agent generates the XML file, which must be sent monthly to ANEEL (Brazilian Electricity Regulatory Agency), containing the works landmarks and all the technical data of the endeavors. The system stores the generated XML file in case of any future problems.</p>
+    <p>This tool is timesaving, because it is not necessary to manually fill out the XML file, or redo the basic register or the schedules of landmarks previously achieved, reusing any information previously provided to the system.</p>
+    <p>The ENERGI system has the following modules:</p>
+    <ul class="listaul" style="margin-left:40px !important;">
+        <li>Endeavors;</li>
+        <li>Equipment Module;</li>
+        <li>Transmission Line;</li>
+        <li>Maneuver;</li>
+        <li>General Register;</li>
+        <li>Generating XML;</li>
+        <li>Reports;</li>
+        <li>Security.</li>
+    </ul>     
+</div>
+<!-- ***********************************************************************************************************************************-->
+
+<div id="wkt" style="border: solid; width: 150px; display:none;"> 
+	<b>WKT</b>
+    <p></p>
+	<p>Management system designed to facilitate the processes of the exportation activity, it provides the monitoring of goods from its origin until its final destination, allowing full control of the purchase, transport, legalization of the process and final clearance.</p> 
+	<p>At WKT all the procedure undergoes a rigid organizational control, starting from the inclusion of the product in the process, its means of transport, clearance, until the confirmation of receipt in the established destination. Making the exportation process and the clearance secure and transparent.</p>
+	<p>Since it is developed in a Web platform, it becomes an easy access and flexible tool and it can be accessed from any device connected to the Internet.</p>   
+	<p>Main modules:</p>
+	<ul class="listaul" style="margin-left:40px !important;">
+        <li>Client control;</li>
+        <li>Supplier control;</li>
+        <li>Financial control;</li>
+        <li>Reports;</li>
+        <li>Graphics of the approved quotes;</li>
+        <li>Security.</li>
+	</ul>
+</div>
+
+
+</body>
+</html>
