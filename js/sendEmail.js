@@ -11,14 +11,15 @@ var SendEmail = {
 
             if (SendEmail.validate()) {
                 $.ajax({
-                    url: "//formspree.io/me@juliherm.es",
+                    url: "//formspree.io/contato@tisstech.com.br",
                     method: "POST",
                     data: {
                         nome: $('#name').val(),
                         email: $('#email').val(),
+                        telefone: $('#telephone').val(),
                         assunto: $('#subject').val(),
                         mensagem: $('#message').val(),
-                        _subject: "Contato Pelo Site Juliherm.es"
+                        _subject: "Contato Pelo Site deyvisonrocha.com"
                     },
                     dataType: "json"
                 })
@@ -26,6 +27,7 @@ var SendEmail = {
                     $('.alert-success').removeClass('hidden');
                     $('#name').val('');
                     $('#email').val('');
+                    $('#telephone').val('');
                     $('#subject').val('');
                     $('#message').val('');
                 })
@@ -45,6 +47,7 @@ var SendEmail = {
         var result = true;
         var name = $('#name').val();
         var email = $('#email').val()
+        var telephone = $('#telephone').val()
         var message = $('#message').val();
 
         if (name == '') {
@@ -62,6 +65,11 @@ var SendEmail = {
                 $('#span-error-email-2').removeClass('hidden');
                 result = false;
             }
+        }
+        if (telephone == '') {
+            $('#div-error-telephone').addClass('has-error');
+            $('#span-error-telephone').removeClass('hidden');
+            result = false;
         }
         if (message == '') {
             $('#div-error-message').addClass('has-error');
