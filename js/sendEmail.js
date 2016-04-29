@@ -19,7 +19,7 @@ var SendEmail = {
                         telefone: $('#telephone').val(),
                         assunto: $('#subject').val(),
                         mensagem: $('#message').val(),
-                        _subject: "Contato Pelo Site deyvisonrocha.com"
+                        _subject: "Contato Pelo Site Tisstech.com.br"
                     },
                     dataType: "json"
                 })
