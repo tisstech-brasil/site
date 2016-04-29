@@ -192,21 +192,6 @@ jQuery(function($) {'use strict';
 		});
 	});
 
-	// Contact form
-	var form = $('#main-contact-form');
-	form.submit(function(event){
-		event.preventDefault();
-		var form_status = $('<div class="form_status"></div>');
-		$.ajax({
-			url: $(this).attr('action'),
-			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando email...</p>').fadeIn() );
-			}
-		}).done(function(data){
-			form_status.html('<p class="text-success">Obrigado por nos contactar. Em breve lhe daremos um retorno.</p>').delay(3000).fadeOut();
-		});
-	});
-
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
@@ -230,4 +215,4 @@ jQuery(function($) {'use strict';
 	}
 	google.maps.event.addDomListener(window, 'load', initialize_map);
 
-});
+	});
